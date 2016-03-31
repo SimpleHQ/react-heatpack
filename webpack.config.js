@@ -116,6 +116,14 @@ module.exports = function config(options) {
           ]) + '!' + require.resolve('autoprefixer-loader')
         },
         {
+          test: /\.scss$/,
+          loader: combineLoaders([
+            {loader: require.resolve('style-loader')},
+            {loader: require.resolve('css-loader'), query: {minimize: false}},
+            {loader: require.resolve('sass-loader'), query: {minimize: false}}
+          ])
+        },
+        {
           test: /\.(gif|png)$/,
           loader: require.resolve('url-loader'),
           query: {

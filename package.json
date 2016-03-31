@@ -46,7 +46,8 @@
     "webpack-hot-middleware": "^2.5.0"
   },
   "devDependencies": {
-    "eslint-config-jonnybuchanan": "^1.0.1"
+    "eslint-config-jonnybuchanan": "^1.0.1",
+    "sass-loader": "^3.2.0"
   },
   "license": "MIT"
 }
